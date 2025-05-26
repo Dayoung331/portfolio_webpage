@@ -6,26 +6,27 @@ import { Calendar, MapPin } from "lucide-react"
 export default function Activities() {
   const activities = [
     {
-      title: "프론트엔드 개발자 컨퍼런스",
-      role: "발표자",
-      date: "2023년 10월",
-      location: "서울",
-      description: "React 최적화 기법에 대한 발표를 진행했습니다.",
+      title: "한양대학교 앱 개발 동아리 EOS",
+      role: "회원, 멘토",
+      date: "2022년 3월 - 2025년 1월",
+      location: "한양대학교",
+      description: "Java 멘토링을 통해 후배들을 가르쳤으며, 동아리 회원들과 함께 Flutter를 활용한 모바일 앱을 개발했습니다.",
     },
     {
-      title: "오픈 소스 프로젝트 기여",
-      role: "컨트리뷰터",
-      date: "2022년 - 현재",
-      location: "온라인",
-      description: "다양한 오픈 소스 프로젝트에 기여하고 있습니다.",
+      title: "카이스트 몰입캠프",
+      role: "참가자",
+      date: "2024년 6월 - 2024년 7월",
+      location: "카이스트",
+      description: "4주 동안 매주 새로운 프로젝트를 진행하며 다양한 사람들과의 협업 경험을 쌓았습니다. 새로운 기술 스택을 도입하고 학습하는 과정에서 기술적 도전의식을 키울 수 있었습니다.",
     },
     {
-      title: "개발자 커뮤니티 운영",
-      role: "운영진",
-      date: "2021년 - 현재",
-      location: "서울",
-      description: "지역 개발자 커뮤니티 운영 및 행사 기획을 담당하고 있습니다.",
+      title: "신한투자증권 프로 디지털 아카데미",
+      role: "참가자",
+      date: "2025년 4월 - 현재",
+      location: "신한투자증권",
+      description: "금융권의 IT 시스템과 개발 프로세스를 학습하며 금융 개발자로 성장하고 있습니다. 금융 서비스 개발에 필요한 전문 지식과 기술을 습득하는 중입니다.",
     },
+    /*
     {
       title: "기술 블로그 운영",
       role: "작성자",
@@ -54,6 +55,7 @@ export default function Activities() {
       location: "국내외",
       description: "다양한 개발자 컨퍼런스에 정기적으로 참여하고 있습니다.",
     },
+    */
   ]
 
   // 애니메이션 변수

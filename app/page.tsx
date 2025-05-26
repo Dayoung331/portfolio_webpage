@@ -8,6 +8,7 @@ import Home from "@/components/home"
 import Skills from "@/components/skills"
 import Projects from "@/components/projects"
 import Activities from "@/components/activities"
+import Contact from "@/components/contact"
 
 export default function Portfolio() {
   const containerRef = useRef<HTMLDivElement>(null)
@@ -25,8 +26,9 @@ export default function Portfolio() {
   })
 
   const [currentSection, setCurrentSection] = useState(0)
-  const sections = ["홈", "기술", "프로젝트", "외부 활동"]
+  const sections = ["홈", "기술", "프로젝트", "외부 활동", "이력"]
   const sectionRefs = [
+    useRef<HTMLDivElement>(null),
     useRef<HTMLDivElement>(null),
     useRef<HTMLDivElement>(null),
     useRef<HTMLDivElement>(null),
@@ -129,6 +131,12 @@ export default function Portfolio() {
       <section ref={sectionRefs[3]} className="min-h-screen flex items-center justify-center relative py-20">
         <Activities />
       </section>
+
+      {/* 연락하기 섹션 */}
+      <section ref={sectionRefs[4]} className="min-h-screen flex items-center justify-center relative py-20">
+        <Contact />
+      </section>
+
     </div>
   )
 }

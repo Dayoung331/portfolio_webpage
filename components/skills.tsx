@@ -1,20 +1,55 @@
 "use client"
 
 import { motion } from "framer-motion"
+import { 
+  SiReact, 
+  SiNextdotjs, 
+  SiTypescript, 
+  SiJavascript, 
+  SiHtml5, 
+  SiTailwindcss,
+  SiNodedotjs,
+  SiExpress,
+  SiMongodb,
+  SiFirebase,
+  SiGit,
+  SiGithub,
+  SiFigma,
+  SiJest,
+  SiWebpack
+} from "react-icons/si"
 
 export default function Skills() {
   const skills = [
     {
       category: "프론트엔드",
-      items: ["React", "Next.js", "TypeScript", "JavaScript", "HTML/CSS", "Tailwind CSS"],
+      items: [
+        { name: "React", icon: SiReact },
+        { name: "Next.js", icon: SiNextdotjs },
+        { name: "TypeScript", icon: SiTypescript },
+        { name: "JavaScript", icon: SiJavascript },
+        { name: "HTML/CSS", icon: SiHtml5 },
+        { name: "Tailwind CSS", icon: SiTailwindcss },
+      ],
     },
     {
       category: "백엔드",
-      items: ["Node.js", "Express", "MongoDB", "Firebase"],
+      items: [
+        { name: "Node.js", icon: SiNodedotjs },
+        { name: "Express", icon: SiExpress },
+        { name: "MongoDB", icon: SiMongodb },
+        { name: "Firebase", icon: SiFirebase },
+      ],
     },
     {
       category: "도구 & 기타",
-      items: ["Git", "GitHub", "Figma", "Jest", "Webpack", "VS Code"],
+      items: [
+        { name: "Git", icon: SiGit },
+        { name: "GitHub", icon: SiGithub },
+        { name: "Figma", icon: SiFigma },
+        { name: "Jest", icon: SiJest },
+        { name: "Webpack", icon: SiWebpack }
+      ],
     },
   ]
 
@@ -85,21 +120,15 @@ export default function Skills() {
             <ul className="space-y-3">
               {skillGroup.items.map((skill, skillIndex) => (
                 <motion.li
-                  key={skill}
-                  className="flex items-center gap-2"
+                  key={skill.name}
+                  className="flex items-center gap-3"
                   initial={{ opacity: 0, x: -10 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.1 * skillIndex, duration: 0.4 }}
                   viewport={{ once: true }}
                 >
-                  <motion.div
-                    className="w-2 h-2 rounded-full bg-cyan-500"
-                    initial={{ scale: 0 }}
-                    whileInView={{ scale: 1 }}
-                    transition={{ delay: 0.1 * skillIndex + 0.2, duration: 0.3 }}
-                    viewport={{ once: true }}
-                  />
-                  <span>{skill}</span>
+                  <skill.icon className="w-5 h-5 text-cyan-500" />
+                  <span>{skill.name}</span>
                 </motion.li>
               ))}
             </ul>
