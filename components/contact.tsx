@@ -122,7 +122,7 @@ export default function Contact() {
 
       {/* 이력 및 자격증 섹션 */}
       <motion.div
-        className="mb-16 bg-gray-900/90 dark:bg-gray-900/90 backdrop-blur-sm p-8 rounded-xl border border-gray-700"
+        className="mb-16 bg-white/80 dark:bg-gray-900/90 backdrop-blur-sm p-8 rounded-xl border border-gray-200 dark:border-gray-700"
         variants={containerVariants}
         initial="hidden"
         whileInView="show"
@@ -131,7 +131,7 @@ export default function Contact() {
         {/* 이력 및 자격증 */}
         <motion.div variants={itemVariants} className="mb-12">
           <motion.h3
-            className="text-xl font-semibold mb-8 text-green-400"
+            className="text-xl font-semibold mb-8 text-cyan-500"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
@@ -143,34 +143,34 @@ export default function Contact() {
           <div className="space-y-8">
             {/* 한양대학교 */}
             <motion.div
-              className="grid grid-cols-12 gap-4 text-white"
+              className="grid grid-cols-12 gap-4 text-gray-800 dark:text-white"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
               viewport={{ once: true }}
             >
               <div className="col-span-12 md:col-span-3 flex items-start gap-2">
-                <span className="text-gray-400 mt-1">✦</span>
-                <span className="text-gray-400">2022 –</span>
+                <span className="text-gray-500 dark:text-gray-400 mt-1">✦</span>
+                <span className="text-gray-500 dark:text-gray-400">2022 –</span>
               </div>
               <div className="col-span-12 md:col-span-9">
                 <h4 className="text-xl font-semibold mb-2">한양대학교</h4>
-                <p className="text-gray-300 mb-4">컴퓨터소프트웨어학부 전공</p>
-                <ul className="space-y-2 text-gray-300">
+                <p className="text-gray-600 dark:text-gray-300 mb-4">컴퓨터소프트웨어학부 전공</p>
+                <ul className="space-y-2 text-gray-600 dark:text-gray-300">
                   <li className="flex items-start gap-2">
-                    <span className="text-gray-500 mt-1.5 text-xs">•</span>
+                    <span className="text-gray-500 dark:text-gray-500 mt-1.5 text-xs">•</span>
                     <span>웹 프로그래밍 기초, 이미지 프로세싱 및 인터랙티브 미디어 프로그래밍 학습</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-gray-500 mt-1.5 text-xs">•</span>
+                    <span className="text-gray-500 dark:text-gray-500 mt-1.5 text-xs">•</span>
                     <span>기초 디자인 및 UI/UX 디자인 학습</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-gray-500 mt-1.5 text-xs">•</span>
+                    <span className="text-gray-500 dark:text-gray-500 mt-1.5 text-xs">•</span>
                     <span>C, Java, 자료구조, 알고리즘 등 기초 CS 지식 학습</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-gray-500 mt-1.5 text-xs">•</span>
+                    <span className="text-gray-500 dark:text-gray-500 mt-1.5 text-xs">•</span>
                     <span>Python, R, 빅데이터 프로그래밍, 코퍼스 언어학 등 데이터 프로그래밍 학습</span>
                   </li>
                 </ul>
@@ -206,77 +206,77 @@ export default function Contact() {
 
         {/* 자격증 */}
         <motion.div variants={itemVariants}>
-          <div className="border-t border-gray-700 pt-8">
+          <div className="border-t border-gray-200 dark:border-gray-700 pt-8">
             <div className="space-y-6">
               {/* 투자자산운용사 */}
               <motion.div
-                className="grid grid-cols-12 gap-4 text-white"
+                className="grid grid-cols-12 gap-4 text-gray-800 dark:text-white"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
                 viewport={{ once: true }}
               >
                 <div className="col-span-12 md:col-span-3 flex items-start gap-2">
-                  <span className="text-gray-400 mt-1">✦</span>
-                  <span className="text-gray-400">2025.07</span>
+                  <span className="text-gray-500 dark:text-gray-400 mt-1">✦</span>
+                  <span className="text-gray-500 dark:text-gray-400">2025.07</span>
                 </div>
                 <div className="col-span-12 md:col-span-9">
                   <h4 className="text-xl font-semibold mb-1">투자자산운용사</h4>
-                  <p className="text-gray-300">금융위원회</p>
+                  <p className="text-gray-600 dark:text-gray-300">금융위원회</p>
                 </div>
               </motion.div>
 
               {/* 정보처리기사 */}
               <motion.div
-                className="grid grid-cols-12 gap-4 text-white"
+                className="grid grid-cols-12 gap-4 text-gray-800 dark:text-white"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
                 viewport={{ once: true }}
               >
                 <div className="col-span-12 md:col-span-3 flex items-start gap-2">
-                  <span className="text-gray-400 mt-1">✦</span>
-                  <span className="text-gray-400">2025.12</span>
+                  <span className="text-gray-500 dark:text-gray-400 mt-1">✦</span>
+                  <span className="text-gray-500 dark:text-gray-400">2025.12</span>
                 </div>
                 <div className="col-span-12 md:col-span-9">
                   <h4 className="text-xl font-semibold mb-1">정보처리기사</h4>
-                  <p className="text-gray-300">한국산업인력공단</p>
+                  <p className="text-gray-600 dark:text-gray-300">한국산업인력공단</p>
                 </div>
               </motion.div>
 
               {/* SQLD */}
               <motion.div
-                className="grid grid-cols-12 gap-4 text-white"
+                className="grid grid-cols-12 gap-4 text-gray-800 dark:text-white"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.5 }}
                 viewport={{ once: true }}
               >
                 <div className="col-span-12 md:col-span-3 flex items-start gap-2">
-                  <span className="text-gray-400 mt-1">✦</span>
-                  <span className="text-gray-400">2025.11</span>
+                  <span className="text-gray-500 dark:text-gray-400 mt-1">✦</span>
+                  <span className="text-gray-500 dark:text-gray-400">2025.11</span>
                 </div>
                 <div className="col-span-12 md:col-span-9">
                   <h4 className="text-xl font-semibold mb-1">SQLD</h4>
-                  <p className="text-gray-300">한국데이터산업진흥원</p>
+                  <p className="text-gray-600 dark:text-gray-300">한국데이터산업진흥원</p>
                 </div>
               </motion.div>
 
               {/* TOEIC */}
               <motion.div
-                className="grid grid-cols-12 gap-4 text-white"
+                className="grid grid-cols-12 gap-4 text-gray-800 dark:text-white"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.6 }}
                 viewport={{ once: true }}
               >
                 <div className="col-span-12 md:col-span-3 flex items-start gap-2">
-                  <span className="text-gray-400 mt-1">✦</span>
-                  <span className="text-gray-400">2025.12</span>
+                  <span className="text-gray-500 dark:text-gray-400 mt-1">✦</span>
+                  <span className="text-gray-500 dark:text-gray-400">2025.12</span>
                 </div>
                 <div className="col-span-12 md:col-span-9">
                   <h4 className="text-xl font-semibold mb-1">TOEIC</h4>
-                  <p className="text-gray-300">915점</p>
+                  <p className="text-gray-600 dark:text-gray-300">915점</p>
                 </div>
               </motion.div>
             </div>
@@ -326,7 +326,7 @@ export default function Contact() {
               transition={{ duration: 0.5, delay: 0.3 }}
               viewport={{ once: true }}
             >
-              새로운 프로젝트나 협업 기회에 대해 언제든 연락주세요. 함께 멋진 것을 만들어보아요!
+              더 궁금한 점이 있으면 언제든 연락주세요!
             </motion.p>
           </div>
 
